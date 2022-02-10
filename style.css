@@ -101,3 +101,55 @@ body{
     font-size: .9rem;
     color: var(--lg-magenta)
 }
+
+@media screen and (min-width: 1024px) {
+    body{
+        margin: .5rem 3rem;
+    }
+    .header{
+        display: flex;
+    }
+
+    .grid{
+        grid-template-rows: repeat(3, auto);
+        align-items: center;
+    }
+
+    .flex{
+        display: flex;
+        height: 300px;
+    }
+
+    .texts,.rateds{
+        width: 50%;
+        text-align: left;
+    }
+    .title,
+    .subtitle{
+        width: 80%;
+    }
+
+    .title{
+        font-size: 3rem;
+    }
+    
+    .subtitle{
+        padding-right: 2em;
+    }
+
+    .rated__text{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .card:first-child{
+        align-self: flex-start;
+    }
+
+    .card:nth-child(2){
+        align-self: center;
+    }
+    .card:nth-child(3){
+        align-self: flex-end;
+    }
+}
